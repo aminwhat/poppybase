@@ -1,0 +1,7 @@
+node_modules
+build
+megalinter-reports/
+# .env
+
+package-lock.json
+yarn.lock

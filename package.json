@@ -1,0 +1,38 @@
+{
+  "name": "poppybase",
+  "version": "0.0.1",
+  "description": "Just A Seed",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node --max_old_space_size=4096 ./build/src/app.js",
+    "build": "npx swc ./src -d ./build && npm run sentry:sourcemaps",
+    "dev": "cross-env NODE_ENV=development nodemon ./src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aminwhat/Poppybase.git"
+  },
+  "author": "aminwhat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aminwhat/Poppybase/issues"
+  },
+  "homepage": "https://github.com/aminwhat/Poppybase#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.7.8",
+    "@swc/core": "^1.13.4",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/morgan": "^1.9.10",
+    "cross-env": "^10.0.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
